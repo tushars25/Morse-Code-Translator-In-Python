@@ -10,20 +10,26 @@ The algorithm is very simple. Every character in the English language is substit
 Encryption
 
 1-In case of encryption we extract each character (if not a space) from a word one at a time and match it with its corresponding morse code stored in whichever data structure we have chosen(if you are coding in python, dictionaries can turn out to be very useful in this case)
+
 2-Store the morse code in a variable which will contain our encoded string and then we add a space to our string which will contain the result.
+
 3-While encoding in morse code we need to add 1 space between every character and 2 consecutive spaces between every word.
-4-If the character is a space then add another space to the variable containing the result. We repeat this process till we traverse the whole string
+
+4-If the character is a space then add another space to the variable containing the result. We repeat this process till we traverse the whole string.
 
 Decryption
 
-1-In case of decryption, we start by adding a space at the end of the string to be decoded 
+1-In case of decryption, we start by adding a space at the end of the string to be decoded.
+
 2-Now we keep extracting characters from the string till we are not getting any space.
+
 3-As soon as we get a space we look up the corresponding English language character to the extracted sequence of characters (or our morse code) and add it to a variable which will store the result.
+
 4-Remember keeping track of the space is the most important part of this decryption process. As soon as we get 2 consecutive spaces we will add another space to our variable containing the decoded string.
+
 5-The last space at the end of the string will help us identify the last sequence of morse code characters (since a space acts as a check for extracting characters and start decoding them)
 
 Implementation
-
 Python provides a data structure called dictionary which stores information in the form of key-value pairs which is very convenient for implementing a cipher such as the morse code. We can save the morse code chart in a dictionary where (key-value pairs) => (English Characters-Morse Code). The plaintext (English characters) take the place of keys and the ciphertext (Morse code) form the values of the corresponding keys. The values of keys can be accessed from the dictionary in the same way we access the values of an array through their index and vice versa.
 
 MODULES USED
