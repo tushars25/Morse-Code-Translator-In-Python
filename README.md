@@ -29,7 +29,7 @@ Decryption
 
 5-The last space at the end of the string will help us identify the last sequence of morse code characters (since a space acts as a check for extracting characters and start decoding them)
 
-Implementation
+Implementation-:
 Python provides a data structure called dictionary which stores information in the form of key-value pairs which is very convenient for implementing a cipher such as the morse code. We can save the morse code chart in a dictionary where (key-value pairs) => (English Characters-Morse Code). The plaintext (English characters) take the place of keys and the ciphertext (Morse code) form the values of the corresponding keys. The values of keys can be accessed from the dictionary in the same way we access the values of an array through their index and vice versa.
 
 MODULES USED
