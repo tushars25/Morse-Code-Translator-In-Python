@@ -35,10 +35,16 @@ Python provides a data structure called dictionary which stores information in t
 MODULES USED
 
 dictionary.py :- This module consists of a morse code dictionary having keys and values for the conversion.
+
 encryption.py :- This module consists of a function which is used to convert normal text into morse code.
+
 decryption.py :- This module consists of a function which is used to convert morse code into plain text.
+
 gui.py :- This is the module where you can run the code with its simple GUI interface.
+
 gui_support.py :- This is module with try and except for importing the right library and for displaying GUI.
+
 run.py :- This module deals with running of code with GUI. It is terminal based for the sake of simplicity.
+
 
  
