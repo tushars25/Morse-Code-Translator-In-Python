@@ -5,7 +5,11 @@ try:
     import Tkinter as tk
 except ImportError:
     import tkinter as tk
-
+try:
+    import pyperclip as pc
+except:
+    print("Install pyperclip first")
+    
 import gui_support
 
 def vp_start_gui():
@@ -68,11 +72,13 @@ class Toplevel1:
             plain_text =self.text1.get().upper()
             ans=cipher.encryptor(plain_text)
             #print(ans)
+            pc.copy(ans)
             self.text1_1.configure(text=ans)
 
         def get():
             encrypted_text =self.text1.get()
             x=decipher.decryptor(encrypted_text)
+            pc.copy(x)
             self.text1_1.configure(text=x)
 
         self.Button1 = tk.Button(top)
